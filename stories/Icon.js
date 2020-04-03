@@ -5,13 +5,20 @@ class Icon extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      icon: "google.com"
+      icon:
+        "https://github.com/skut21x-ga/component-library-project/blob/master/stories/cart.png?raw=true",
+      //    "https://github.com/skut21x-ga/component-library-project/blob/master/stories/hearts.png?raw=true",
+      classList: "",
+      props: ""
     };
   }
   render() {
     return (
       <div className="IconButton">
-        <img className="Icon" src="/hearts.png"></img>
+        <div className={this.state.classList}>
+          <img className="Icon" src={this.state.icon}></img>
+          {this.state.props.label}
+        </div>
       </div>
     );
   }
