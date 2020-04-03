@@ -17,7 +17,7 @@ class Icon extends Component {
       <div className="IconButton">
         <div className={this.state.classList}>
           <img className="Icon" src={this.state.icon}></img>
-          {this.state.props.label}
+          <a className="Text">Add to Cart</a>
         </div>
       </div>
     );
@@ -25,3 +25,5 @@ class Icon extends Component {
 }
 
 export default Icon;
+
+//{this.state.props.label} (add that to return?)
