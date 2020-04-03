@@ -1,8 +1,9 @@
 import React from "react";
 import "./Icon.css";
 
-const Icon = props => {
+const Icon = (props) => {
   let icon = "";
+  let classList = "";
   if (props.icon == "cart") {
     icon =
       "https://github.com/skut21x-ga/component-library-project/blob/master/stories/cart.png?raw=true";
@@ -11,13 +12,16 @@ const Icon = props => {
     icon =
       "https://github.com/skut21x-ga/component-library-project/blob/master/stories/hearts.png?raw=true";
   }
+  if (props.label == "") {
+    classList += ` container-${props.label}`;
+  }
   return (
     <div className="IconButton">
       <div className="IconOnlyButton">
         <img className="Icon" src={icon}></img>
       </div>
-      <div className="TextBox">
-        <a className="Text">{props.label}</a>
+      <div className={props.label}>
+        <a className="IconText">{props.label}</a>
       </div>
     </div>
   );

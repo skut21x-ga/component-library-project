@@ -1,14 +1,14 @@
 import React from "react";
 import "./Forms.css";
 
-const Forms = props => {
+const Forms = (props) => {
   let classList = "";
   let types = [
     "textinput",
     "selectinput",
     "numberinput",
     "textinputbutton",
-    "checkbox"
+    "checkbox",
   ];
   if (props.large) {
     classList += ` Forms-large`;

@@ -3,6 +3,11 @@ import { storiesOf } from "@storybook/react";
 import Button from "./Button.js";
 import Icon from "./Icon.js";
 
+<link
+  href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+  rel="stylesheet"
+></link>;
+
 storiesOf("Buttons", module)
   //default buttons
   .add("Default", () => <Button label="Default" />)

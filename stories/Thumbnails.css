@@ -1,0 +1,55 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  font-family: "Lato", sans-serif;
+}
+
+.container-vertical {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: 2px solid rgba(128, 128, 128, 0.091);
+  width: 250px;
+}
+
+.container-horizontal {
+  background-color: red;
+}
+
+.container-small {
+  background-color: #33a0ff;
+}
+
+.container-inline {
+  background-color: #33a0ff;
+}
+
+.Line {
+  height: 0.1px;
+  width: 225px;
+  border: 0.25px solid rgba(128, 128, 128, 0.125);
+}
+
+.Prices {
+  display: flex;
+}
+
+.Cost {
+  color: red;
+  margin: 10px;
+}
+
+.Text {
+  color: black;
+  font-size: 14px;
+  margin: 10px;
+}
+
+.Oldcost {
+  text-decoration: line-through;
+  color: rgb(171, 171, 171);
+  margin: 10px;
+}

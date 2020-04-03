@@ -6,6 +6,8 @@ button {
   color: white;
   background-color: #22262a;
   border: 0px;
+  font-family: "Lato", sans-serif;
+  letter-spacing: 0.25px;
 }
 
 button:hover {
@@ -104,5 +106,3 @@ button:hover {
   font-size: 15px;
   width: 220px;
 }
-
-/* #opacity 10% for clicked backgrounds */
