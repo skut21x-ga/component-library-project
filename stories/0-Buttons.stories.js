@@ -1,6 +1,7 @@
 import React from "react";
 import { storiesOf } from "@storybook/react";
 import Button from "./Button.js";
+import Icon from "./Icon.js";
 
 storiesOf("Buttons", module)
   //default buttons
@@ -88,4 +89,9 @@ storiesOf("Buttons", module)
   ))
   .add("Warning (Large + Outlined)", () => (
     <Button label="Warning (Large + Outlined)" type="warning" outlined large />
+  ))
+
+  //icons
+  .add("Add to Cart + Icon", () => (
+    <Icon label="Add to Cart" type="icon" icon />
   ));
