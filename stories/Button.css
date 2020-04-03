@@ -14,7 +14,7 @@ button:hover {
 }
 
 .button-undefined-outlined {
-  border: 2px solid #13161a;
+  box-shadow: inset 0px 0px 0px 2px #13161a;
   background-color: white;
   color: black;
 }
@@ -22,7 +22,6 @@ button:hover {
 .button-undefined-faded {
   background-color: #22262a10;
   color: black;
-  border: 0px;
 }
 
 .button-primary {
@@ -34,7 +33,7 @@ button:hover {
 }
 
 .button-primary-outlined {
-  border: 2px solid #2e90e5;
+  box-shadow: inset 0px 0px 0px 2px #2e90e5;
   background-color: white;
   color: #2e90e5;
 }
@@ -42,7 +41,6 @@ button:hover {
 .button-primary-faded {
   background-color: #2e90e530;
   color: #2e90e5;
-  border: 0px;
 }
 
 .button-success {
@@ -54,7 +52,7 @@ button:hover {
 }
 
 .button-success-outlined {
-  border: 2px solid #0ad00a;
+  box-shadow: inset 0px 0px 0px 2px #0ad00a;
   background-color: white;
   color: #0ad00a;
 }
@@ -62,7 +60,6 @@ button:hover {
 .button-success-faded {
   background-color: #0ad00a30;
   color: #0ad00a;
-  border: 0px;
 }
 
 .button-danger {
@@ -74,7 +71,7 @@ button:hover {
 }
 
 .button-danger-outlined {
-  border: 2px solid #f53848;
+  box-shadow: inset 0px 0px 0px 2px #f53848;
   background-color: white;
   color: #f53848;
 }
@@ -82,7 +79,6 @@ button:hover {
 .button-danger-faded {
   background-color: #f5384830;
   color: #f53848;
-  border: 0px;
 }
 
 .button-warning {
@@ -94,7 +90,7 @@ button:hover {
 }
 
 .button-warning-outlined {
-  border: 2px solid #ebb600;
+  box-shadow: inset 0px 0px 0px 2px #ebb600;
   background-color: white;
   color: #ebb600;
 }
@@ -102,7 +98,6 @@ button:hover {
 .button-warning-faded {
   background-color: #ebb60030;
   color: #ebb600;
-  border: 0px;
 }
 
 .button-large {
