@@ -13,7 +13,7 @@ const Button = props => {
     classList += ` button-${props.type}-outlined`;
   }
   if (props.opaque) {
-    classList += ` button-${props.type}-opaque`;
+    classList += ` button-${props.type}-faded`;
   }
   if (types.includes(props.type)) {
     classList += ` button-${props.type}`;

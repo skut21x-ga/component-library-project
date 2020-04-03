@@ -9,10 +9,10 @@ storiesOf("Buttons", module)
   .add("Default (Outlined)", () => (
     <Button label="Default (Outlined)" outlined />
   ))
-  .add("Default (Opaque)", () => <Button label="Default (Opaque)" opaque />)
+  .add("Default (Faded)", () => <Button label="Default (Faded)" faded />)
   .add("Default (Large)", () => <Button label="Default (Large)" large />)
-  .add("Default (Large + Opaque)", () => (
-    <Button label="Default (Large + Opaque)" opaque large />
+  .add("Default (Large + Faded)", () => (
+    <Button label="Default (Large + Faded)" faded large />
   ))
   .add("Default (Large + Outlined)", () => (
     <Button label="Default (Large + Outlined)" outlined large />
@@ -23,14 +23,14 @@ storiesOf("Buttons", module)
   .add("Primary (Outlined)", () => (
     <Button label="Primary (Outlined)" type="primary" outlined />
   ))
-  .add("Primary (Opaque)", () => (
-    <Button label="Primary (Opaque)" type="primary" opaque />
+  .add("Primary (Faded)", () => (
+    <Button label="Primary (Faded)" type="primary" faded />
   ))
   .add("Primary (Large)", () => (
     <Button label="Primary (Large)" type="primary" large />
   ))
-  .add("Primary (Large + Opaque)", () => (
-    <Button label="Primary (Large + Opaque)" type="primary" opaque large />
+  .add("Primary (Large + Faded)", () => (
+    <Button label="Primary (Large + Faded)" type="primary" faded large />
   ))
   .add("Primary (Large + Outlined)", () => (
     <Button label="Primary (Large + Outlined)" type="primary" outlined large />
@@ -41,14 +41,14 @@ storiesOf("Buttons", module)
   .add("Danger (Outlined)", () => (
     <Button label="Danger (Outlined)" type="danger" outlined />
   ))
-  .add("Danger (Opaque)", () => (
-    <Button label="Danger (Opaque)" type="danger" opaque />
+  .add("Danger (Faded)", () => (
+    <Button label="Danger (Faded)" type="danger" faded />
   ))
   .add("Danger (Large)", () => (
     <Button label="Danger (Large)" type="danger" large />
   ))
-  .add("Danger (Large + Opaque)", () => (
-    <Button label="Danger (Large + Opaque)" type="danger" opaque large />
+  .add("Danger (Large + Faded)", () => (
+    <Button label="Danger (Large + Faded)" type="danger" faded large />
   ))
   .add("Danger (Large + Outlined)", () => (
     <Button label="Danger (Large + Outlined)" type="danger" outlined large />
@@ -59,14 +59,14 @@ storiesOf("Buttons", module)
   .add("Success (Outlined)", () => (
     <Button label="Success (Outlined)" type="success" outlined />
   ))
-  .add("Success (Opaque)", () => (
-    <Button label="Success (Opaque)" type="success" opaque />
+  .add("Success (Faded)", () => (
+    <Button label="Success (Faded)" type="success" faded />
   ))
   .add("Success (Large)", () => (
     <Button label="Success (Large)" type="success" large />
   ))
-  .add("Success (Large + Opaque)", () => (
-    <Button label="Success (Large + Opaque)" type="success" opaque large />
+  .add("Success (Large + Faded)", () => (
+    <Button label="Success (Large + Faded)" type="success" faded large />
   ))
   .add("Success (Large + Outlined)", () => (
     <Button label="Success (Large + Outlined)" type="success" outlined large />
@@ -77,14 +77,14 @@ storiesOf("Buttons", module)
   .add("Warning (Outlined)", () => (
     <Button label="Warning (Outlined)" type="warning" outlined />
   ))
-  .add("Warning (Opaque)", () => (
-    <Button label="Warning (Opaque)" type="warning" opaque />
+  .add("Warning (Faded)", () => (
+    <Button label="Warning (Faded)" type="warning" faded />
   ))
   .add("Warning (Large)", () => (
     <Button label="Warning (Large)" type="warning" large />
   ))
-  .add("Warning (Large + Opaque)", () => (
-    <Button label="Warning (Large + Opaque)" type="warning" opaque large />
+  .add("Warning (Large + Faded)", () => (
+    <Button label="Warning (Large + Faded)" type="warning" faded large />
   ))
   .add("Warning (Large + Outlined)", () => (
     <Button label="Warning (Large + Outlined)" type="warning" outlined large />

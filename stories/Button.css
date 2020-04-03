@@ -19,7 +19,7 @@ button:hover {
   color: black;
 }
 
-.button-undefined-opaque {
+.button-undefined-faded {
   background-color: #22262a10;
   color: black;
   border: 0px;
@@ -39,7 +39,7 @@ button:hover {
   color: #2e90e5;
 }
 
-.button-primary-opaque {
+.button-primary-faded {
   background-color: #2e90e530;
   color: #2e90e5;
   border: 0px;
@@ -59,7 +59,7 @@ button:hover {
   color: #0ad00a;
 }
 
-.button-success-opaque {
+.button-success-faded {
   background-color: #0ad00a30;
   color: #0ad00a;
   border: 0px;
@@ -79,7 +79,7 @@ button:hover {
   color: #f53848;
 }
 
-.button-danger-opaque {
+.button-danger-faded {
   background-color: #f5384830;
   color: #f53848;
   border: 0px;
@@ -99,7 +99,7 @@ button:hover {
   color: #ebb600;
 }
 
-.button-warning-opaque {
+.button-warning-faded {
   background-color: #ebb60030;
   color: #ebb600;
   border: 0px;
