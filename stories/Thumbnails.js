@@ -1,7 +1,7 @@
 import React from "react";
 import "./Thumbnails.css";
 
-const Thumbnails = props => {
+const Thumbnails = (props) => {
   let classList = "";
   let types = ["block", "inline"];
   if (props.large) {
