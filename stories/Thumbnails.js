@@ -38,6 +38,8 @@ const Thumbnails = (props) => {
       "https://github.com/skut21x-ga/component-library-project/blob/master/stories/rate.png?raw=true";
   }
 
+  //need to make separate container or conditional statements for solid icons on second div.
+
   if (types.includes(props.type)) {
     classList += ` container-${props.type}`;
   }

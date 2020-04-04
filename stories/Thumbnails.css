@@ -37,11 +37,10 @@
 }
 
 .Thumbnail:hover > .Icons {
-  display: flex;
+  display: block;
 }
 
 .Icons {
-  border: 5px;
   margin-top: 45px;
   position: absolute;
   display: none;
