@@ -27,14 +27,55 @@
   background-color: #33a0ff;
 }
 
+.Product {
+  width: 90%;
+  opacity: 1;
+}
+
+.Product:hover {
+  opacity: 0.1;
+}
+
+.Thumbnail:hover > .Icons {
+  display: flex;
+}
+
+.Icons {
+  border: 5px;
+  margin-top: 45px;
+  position: absolute;
+  display: none;
+}
+
+.Icon1 {
+  margin: 5px 5px 5px 15px;
+  border: 1.5px solid #53afff5e;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.Icon2 {
+  margin: 5px 15px 5px 5px;
+  border: 1.5px solid #53afff5e;
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.Thumbnail {
+  display: flex;
+  justify-content: center;
+}
 .Line {
-  height: 0.1px;
+  height: 1px;
   width: 225px;
-  border: 0.25px solid rgba(128, 128, 128, 0.125);
+  border: 0.25px solid rgba(128, 128, 128, 0.1);
+  margin: 13px 0 10px 0;
 }
 
 .Prices {
   display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
 }
 
 .Cost {
@@ -44,8 +85,11 @@
 
 .Text {
   color: black;
-  font-size: 14px;
-  margin: 10px;
+  font-size: 13px;
+}
+
+.RatingBox {
+  margin-top: 15px;
 }
 
 .Oldcost {

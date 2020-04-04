@@ -45,11 +45,11 @@ const Thumbnails = (props) => {
   return (
     <div className="Container">
       <div className={classList}>
-        <div className="Icons">
-          <img className="Icon1" src={heart}></img>
-          <img className="Icon2" src={cart}></img>
-        </div>
-        <div>
+        <div className="Thumbnail">
+          <div className="Icons">
+            <img className="Icon1" src={heart}></img>
+            <img className="Icon2" src={cart}></img>
+          </div>
           <img className="Product" src={product}></img>
         </div>
         <div className="Line"></div>
