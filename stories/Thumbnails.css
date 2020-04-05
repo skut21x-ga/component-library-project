@@ -13,10 +13,24 @@
   padding: 10px;
   border: 2px solid rgba(128, 128, 128, 0.091);
   width: 250px;
+  border-radius: 5px;
 }
 
 .container-horizontal {
-  background-color: red;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px;
+  padding: 10px;
+  border: 4px solid rgb(247, 247, 247);
+  width: 500px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.container-horizontal:hover {
+  background-color: rgb(247, 247, 247);
 }
 
 .container-small {
@@ -25,6 +39,19 @@
 
 .container-inline {
   background-color: #33a0ff;
+}
+
+.MiniContainer-horizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin-left: 20px;
+}
+
+.MiniContainer-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .Product-vertical {
@@ -89,6 +116,22 @@
   font-size: 13px;
 }
 
+.Prices-horizontal {
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.Cost-horizontal {
+  color: red;
+}
+
+.Text-horizontal {
+  color: black;
+  font-size: 20px;
+}
+
 .RatingBox-vertical {
   margin-top: 15px;
 }
@@ -97,4 +140,15 @@
   text-decoration: line-through;
   color: rgb(171, 171, 171);
   margin: 10px;
+}
+
+.RatingBox-horizontal {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.Oldcost-horizontal {
+  text-decoration: line-through;
+  color: rgb(171, 171, 171);
+  margin: 0 0 0 10px;
 }

@@ -16,6 +16,7 @@ const Thumbnails = (props) => {
   let line = "";
   let thumbnail = "";
   let classList = "";
+  let minicontainer = "";
   let oldcost = "";
   let ratingbox = "";
   let productImage = "";
@@ -57,6 +58,7 @@ const Thumbnails = (props) => {
     ratingbox += ` RatingBox-${props.type}`;
     thumbnail += ` Thumbnail-${props.type}`;
     productImage += ` Product-${props.type}`;
+    minicontainer += ` MiniContainer-${props.type}`;
   }
 
   return (
@@ -70,15 +72,17 @@ const Thumbnails = (props) => {
           <img className={productImage} src={product}></img>
         </div>
         <div className={line}></div>
-        <div className="TextBox">
-          <a className={text}>{props.label}</a>
-        </div>
-        <div className={ratingbox}>
-          <img className="Rating" src={rating}></img>
-        </div>
-        <div className={prices}>
-          <div className={cost}>{props.cost}</div>
-          <div className={oldcost}>{props.oldcost}</div>
+        <div className={minicontainer}>
+          <div className="TextBox">
+            <a className={text}>{props.label}</a>
+          </div>
+          <div className={ratingbox}>
+            <img className="Rating" src={rating}></img>
+          </div>
+          <div className={prices}>
+            <div className={cost}>{props.cost}</div>
+            <div className={oldcost}>{props.oldcost}</div>
+          </div>
         </div>
       </div>
     </div>
