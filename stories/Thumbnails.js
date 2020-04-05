@@ -20,6 +20,8 @@ const Thumbnails = (props) => {
   let oldcost = "";
   let ratingbox = "";
   let productImage = "";
+  let textbox = "";
+  let imagebox = "";
 
   let types = ["vertical", "horizontal", "small", "inline"];
 
@@ -59,6 +61,8 @@ const Thumbnails = (props) => {
     thumbnail += ` Thumbnail-${props.type}`;
     productImage += ` Product-${props.type}`;
     minicontainer += ` MiniContainer-${props.type}`;
+    textbox += ` TextBox-${props.type}`;
+    imagebox += ` ImageBox-${props.type}`;
   }
 
   return (
@@ -69,11 +73,13 @@ const Thumbnails = (props) => {
             <img className="Icon1" src={heart}></img>
             <img className="Icon2" src={cart}></img>
           </div>
-          <img className={productImage} src={product}></img>
+          <div className={imagebox}>
+            <img className={productImage} src={product}></img>
+          </div>
         </div>
         <div className={line}></div>
         <div className={minicontainer}>
-          <div className="TextBox">
+          <div className={textbox}>
             <a className={text}>{props.label}</a>
           </div>
           <div className={ratingbox}>
