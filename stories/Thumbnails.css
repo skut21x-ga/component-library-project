@@ -28,12 +28,16 @@
 }
 
 .Product {
-  width: 90%;
   opacity: 1;
+  padding: 10px 20px 10px 20px;
+}
+
+.Thumbnail {
+  padding: 0px -20px 0px -20px;
 }
 
 .Product:hover {
-  opacity: 0.1;
+  opacity: 0.075;
 }
 
 .Thumbnail:hover > .Icons {
@@ -41,20 +45,21 @@
 }
 
 .Icons {
-  margin-top: 45px;
+  margin-top: 60px;
   position: absolute;
   display: none;
 }
 
 .Icon1 {
-  margin: 5px 5px 5px 15px;
-  padding: 10px;
+  margin: -5px 0 5px 15px;
+  padding: 5px;
+  height: 45px;
 }
 
 .Icon2 {
-  margin: 5px 15px 5px 5px;
-
-  padding: 10px;
+  margin: -5px 15px 5px 0px;
+  padding: 5px;
+  height: 45px;
 }
 
 .Thumbnail {
