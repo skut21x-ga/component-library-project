@@ -15,15 +15,15 @@ const Thumbnails = (props) => {
 
   if (props.icon == "clear") {
     heart =
-      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/hearts.png?raw=true";
+      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/heart.png?raw=true";
     cart =
       "https://github.com/skut21x-ga/component-library-project/blob/master/stories/cart.png?raw=true";
   }
   if (props.icon == "solid") {
     heart =
-      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/white-btn1.png?raw=true";
+      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/solidheart.png?raw=true";
     cart =
-      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/white-btn2.png?raw=true";
+      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/solidcart.png?raw=true";
   }
   if (props.label == "Apple Macbook Pro") {
     product =
