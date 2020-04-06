@@ -1,5 +1,8 @@
 import React from "react";
 import "./Thumbnails.css";
+import Button from "./Button.js";
+import Icon from "./Icon.js";
+
 <link
   href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
   rel="stylesheet"
@@ -14,6 +17,7 @@ const Thumbnails = (props) => {
   let prices = "";
   let text = "";
   let line = "";
+  let line2 = "Line2";
   let thumbnail = "";
   let classList = "";
   let minicontainer = "";
@@ -22,6 +26,10 @@ const Thumbnails = (props) => {
   let productImage = "";
   let textbox = "";
   let imagebox = "";
+  let reviewcount = "ReviewCount";
+  let submitreview = "SubmitReview";
+  let producttext = "ProductText";
+  let hotornot = "HotOrNot";
 
   let types = ["vertical", "horizontal", "small", "inline"];
 
@@ -41,13 +49,32 @@ const Thumbnails = (props) => {
     product =
       "https://github.com/skut21x-ga/component-library-project/blob/master/stories/laptop.png?raw=true";
   }
-  if (props.label == "Beats Solo 2 On Ear Headphones - Black") {
+  if (
+    props.label == "Beats Solo 2 On Ear Headphones - Black" &&
+    props.type !== "inline"
+  ) {
     product =
       "https://github.com/skut21x-ga/component-library-project/blob/master/stories/beats.png?raw=true";
   }
   if (props.rating == "4") {
     rating =
       "https://github.com/skut21x-ga/component-library-project/blob/master/stories/rate.png?raw=true";
+  }
+
+  if (
+    props.label == "Beats Solo 2 On Ear Headphones - Black" &&
+    props.type == "inline"
+  ) {
+    product =
+      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/laptop.png?raw=true";
+  }
+
+  if (props.type == "inline") {
+    reviewcount += ` ReviewCount-${props.type}`;
+    submitreview += ` SubmitReview-${props.type}`;
+    producttext += ` ProductText-${props.type}`;
+    hotornot += ` HotOrNot-${props.type}`;
+    line2 = ` Line2-${props.type}`;
   }
 
   if (types.includes(props.type)) {
@@ -74,6 +101,7 @@ const Thumbnails = (props) => {
             <img className="Icon2" src={cart}></img>
           </div>
           <div className={imagebox}>
+            <div className={hotornot}>HOT</div>
             <img className={productImage} src={product}></img>
           </div>
         </div>
@@ -84,11 +112,19 @@ const Thumbnails = (props) => {
           </div>
           <div className={ratingbox}>
             <img className="Rating" src={rating}></img>
+            <div className={reviewcount}>
+              <a>{props.reviewcount} reviews</a>
+            </div>
+            <div className={submitreview}>
+              <a>Submit a review</a>
+            </div>{" "}
+            <div className={line2}></div>
           </div>
           <div className={prices}>
             <div className={cost}>{props.cost}</div>
             <div className={oldcost}>{props.oldcost}</div>
           </div>
+          <div className={producttext}>{props.producttext}</div>
         </div>
       </div>
     </div>

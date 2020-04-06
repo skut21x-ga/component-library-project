@@ -44,11 +44,14 @@ storiesOf("Thumbnails", module)
 
   .add("Inline Block", () => (
     <Thumbnails
-      label="Apple Macbook Pro"
+      label="Beats Solo 2 On Ear Headphones - Black"
       cost="$499"
       oldcost="$599"
       type="inline"
       rating="4"
+      reviewcount="0"
       hot="true"
+      producttext="Nunc facilisis sagittis ullamcorper. Proin lectus ipsum, gravida et mattis vulputate, tristique ut lectus. Sed et lectus lorem nunc leifend laorevtr istique et congue. Vivamus adipiscin vulputate g nisl ut dolor ...
+"
     />
   ));

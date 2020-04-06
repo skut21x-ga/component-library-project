@@ -6,11 +6,11 @@ const Icon = (props) => {
   let classList = "";
   if (props.icon == "cart") {
     icon =
-      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/cart.png?raw=true";
+      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/smallcart.png?raw=true";
   }
   if (props.icon == "favorite") {
     icon =
-      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/hearts.png?raw=true";
+      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/smallheart.png?raw=true";
   }
   if (props.label == "") {
     classList += ` container-${props.label}`;
