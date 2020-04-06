@@ -2,24 +2,35 @@ import React from "react";
 import "./Checkbox.css";
 
 const Checkbox = (props) => {
-  let classList = "";
-  let checkstatus = "";
-  let imageurl = `{props.color}{checkstatus}.png`;
+  let imageurl = `https://github.com/skut21x-ga/component-library-project/blob/master/stories/${props.color}unchecked.png?raw=true`;
   let text = "";
+  let p = parseInt(props.value);
 
   if (props.text == "") {
     text = "notext";
   }
-
-  if (props.value == 0) {
-    checkstatus = "unchecked";
-  }
-  if (props.value == 1) {
-    checkstatus = "checked";
+  if (props.text !== "") {
+    text = "textclass";
   }
 
+  if (p === 1) {
+    imageurl = ` https://github.com/skut21x-ga/component-library-project/blob/master/stories/${props.color}checked.png?raw=true`;
+  }
+
+  const ClickedBox = (e) => {
+    e.preventDefault();
+    if (p === 0) {
+      imageurl = `https://github.com/skut21x-ga/component-library-project/blob/master/stories/${props.color}checked.png?raw=true`;
+      document.querySelector("img").setAttribute("src", imageurl);
+      p++;
+    } else if (p === 1) {
+      imageurl = `https://github.com/skut21x-ga/component-library-project/blob/master/stories/${props.color}unchecked.png?raw=true`;
+      document.querySelector("img").setAttribute("src", imageurl);
+      p--;
+    }
+  };
   return (
-    <div className={classList}>
+    <div className="checkbox" onClick={ClickedBox}>
       <img src={imageurl}></img>
       <a className={text}>{props.text}</a>
     </div>
@@ -27,4 +38,4 @@ const Checkbox = (props) => {
 };
 export default Checkbox;
 
-//label, type, color, value (0 = unchecked), text = don't show ,etc
+//color, value (0 = unchecked), text = don't show ,etc

@@ -1,12 +1,15 @@
-forms {
-  border-radius: 2px;
-  padding: 5px 25px;
-}
-
 .TextInput {
   background-color: green;
 }
 
 .notext {
   display: none;
+}
+
+.textclass {
+  display: flex;
+  margin-left: 25px;
+  margin-top: -23px;
+  font-size: 15px;
+  font-family: Lato;
 }

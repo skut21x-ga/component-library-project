@@ -73,7 +73,7 @@ storiesOf("Form", module)
 
   //checkboxes
   .add("Black Checkbox", () => <Checkbox color="black" value="0" text="" />)
-  .add("Blue Checkbox", () => <Checkbox color="blue" value="0" text="" />)
+  .add("Blue Checkbox", () => <Checkbox color="blue" value="1" text="" />)
   .add("Checkbox with Text", () => (
     <Checkbox color="black" value="0" text="Don't show this popup again" />
   ));
