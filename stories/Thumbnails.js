@@ -1,7 +1,5 @@
 import React from "react";
 import "./Thumbnails.css";
-import Button from "./Button.js";
-import Icon from "./Icon.js";
 
 <link
   href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
@@ -29,7 +27,9 @@ const Thumbnails = (props) => {
   let reviewcount = "ReviewCount";
   let submitreview = "SubmitReview";
   let producttext = "ProductText";
+  let inlineicons = "Icons";
   let hotornot = "HotOrNot";
+  let icon = "";
 
   let types = ["vertical", "horizontal", "small", "inline"];
 
@@ -69,12 +69,25 @@ const Thumbnails = (props) => {
       "https://github.com/skut21x-ga/component-library-project/blob/master/stories/laptop.png?raw=true";
   }
 
+  if (props.icon == "cart") {
+    icon =
+      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/smallcart.png?raw=true";
+  }
+  if (props.icon == "favorite") {
+    icon =
+      "https://github.com/skut21x-ga/component-library-project/blob/master/stories/smallheart.png?raw=true";
+  }
+  if (props.label == "") {
+    classList += ` container-${props.label}`;
+  }
+
   if (props.type == "inline") {
     reviewcount += ` ReviewCount-${props.type}`;
     submitreview += ` SubmitReview-${props.type}`;
     producttext += ` ProductText-${props.type}`;
     hotornot += ` HotOrNot-${props.type}`;
     line2 = ` Line2-${props.type}`;
+    inlineicons = ` Icons-${props.type}`;
   }
 
   if (types.includes(props.type)) {
@@ -125,6 +138,25 @@ const Thumbnails = (props) => {
             <div className={oldcost}>{props.oldcost}</div>
           </div>
           <div className={producttext}>{props.producttext}</div>
+          <div className={inlineicons}>
+            <div className="LeftButton">
+              <div className="CartIcon">
+                <img
+                  className="CartIcon"
+                  src="https://github.com/skut21x-ga/component-library-project/blob/master/stories/smallcart.png?raw=true"
+                ></img>
+              </div>
+              <div className="AddtoCartText">
+                <a className="IconText">Add to Cart</a>
+              </div>
+            </div>
+            <div className="RightButton">
+              <img
+                className="HeartIcon"
+                src="https://github.com/skut21x-ga/component-library-project/blob/master/stories/smallheart.png?raw=true"
+              ></img>
+            </div>
+          </div>
         </div>
       </div>
     </div>
