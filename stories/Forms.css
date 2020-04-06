@@ -1,8 +1,30 @@
-forms {
-  border-radius: 2px;
+form {
   padding: 5px 25px;
+  display: flex;
 }
 
-.TextInput {
-  background-color: green;
+.text {
+  font-family: Lato;
+  font-size: 12px;
+  margin: 5px 0px 2px 0px;
+  margin-right: 20px;
+}
+
+input {
+  color: gray;
+  height: 100%;
+  margin: 4px 0 2px 0px;
+  padding: 0px 0px 0px 10px;
+}
+
+.form-small {
+  height: 35px;
+}
+
+.form-medium {
+  height: 40px;
+}
+
+.form-large {
+  height: 50px;
 }

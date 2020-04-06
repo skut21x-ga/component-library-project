@@ -14,18 +14,13 @@ import Counter from "./Counter.js";
 storiesOf("Form", module)
   //text input forms
   .add("TextInput (Small)", () => (
-    <Forms label="Email" placeholder="Email" type="textinput" boxsize="small" />
+    <Forms label="Email" placeholder="" type="textinput" boxsize="small" />
   ))
   .add("TextInput (Medium)", () => (
-    <Forms
-      label="Email"
-      placeholder="Email"
-      type="textinput"
-      boxsize="medium"
-    />
+    <Forms label="Email" placeholder="" type="textinput" boxsize="medium" />
   ))
   .add("TextInput (Large)", () => (
-    <Forms label="Email" placeholder="Email" type="textinput" boxsize="large" />
+    <Forms label="Email" placeholder="" type="textinput" boxsize="large" />
   ))
 
   //select input forms
