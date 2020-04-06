@@ -13,32 +13,50 @@ import Counter from "./Counter.js";
 
 storiesOf("Form", module)
   //text input forms
-  .add("TextInput (Small)", () => (
+  .add("Text Input (Small)", () => (
     <Forms label="Email" placeholder="" type="textinput" boxsize="small" />
   ))
-  .add("TextInput (Medium)", () => (
+  .add("Text Input (Medium)", () => (
     <Forms label="Email" placeholder="" type="textinput" boxsize="medium" />
   ))
-  .add("TextInput (Large)", () => (
+  .add("Text Input (Large)", () => (
     <Forms label="Email" placeholder="" type="textinput" boxsize="large" />
   ))
 
   //select input forms
-  .add("Select Input (Outlined)", () => (
+  .add("Select (Small Outlined)", () => (
+    <SelectBox label="Select" type="selectinput" boxsize="small" />
+  ))
+  .add("Select (Medium Outlined)", () => (
+    <SelectBox label="Select" type="selectinput" boxsize="medium" />
+  ))
+  .add("Select (Large Outlined)", () => (
+    <SelectBox label="Select" type="selectinput" boxsize="large" />
+  ))
+
+  .add("Select (Small Filled)", () => (
     <SelectBox
       label="Select"
       type="selectinput"
-      filled="false"
-      outlined="true"
+      boxsize="small"
+      filled="true"
     />
   ))
 
-  .add("Select Input (Filled)", () => (
+  .add("Select (Medium Filled)", () => (
     <SelectBox
       label="Select"
       type="selectinput"
+      boxsize="medium"
       filled="true"
-      outlined="false"
+    />
+  ))
+  .add("Select (Large Filled)", () => (
+    <SelectBox
+      label="Select"
+      type="selectinput"
+      boxsize="large"
+      filled="true"
     />
   ))
 

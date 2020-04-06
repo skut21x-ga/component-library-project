@@ -1,22 +1,32 @@
 import React from "react";
-import "./Checkbox.css";
+import "./SelectBox.css";
 
-const SelectBox = (props) => {
+const Forms = (props) => {
+  let boxsizes = ["small", "medium", "large"];
   let classList = "";
-  let types = [
-    "textinput",
-    "selectinput",
-    "numberinput",
-    "textinputbutton",
-    "checkbox",
-  ];
-  if (props.large) {
-    classList += ` Forms-large`;
+  let boxsize = props.boxsize;
+  let filled = "";
+
+  if (boxsizes.includes(props.boxsize)) {
+    classList += ` select-${boxsize}`;
   }
-  if (types.includes(props.type)) {
-    classList += ` Forms-${props.type}`;
+
+  if (props.filled) {
+    classList += ` select-${boxsize}-filled`;
   }
-  return <div className={classList}>{props.label}</div>;
+  return (
+    <form>
+      <label className="selectformbox">
+        <div className={filled}>
+          <select className={classList} name={classList} form="form">
+            <option className="option1" value="1">
+              {props.label}
+            </option>
+          </select>
+        </div>
+      </label>
+    </form>
+  );
 };
 
-export default SelectBox;
+export default Forms;
