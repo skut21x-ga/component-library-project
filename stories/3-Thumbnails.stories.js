@@ -44,7 +44,7 @@ storiesOf("Thumbnails", module)
 
   .add("Inline Block", () => (
     <Thumbnails
-      label="Beats Solo 2 On Ear Headphones - Black"
+      label="Apple Macbook Pro"
       cost="$499"
       oldcost="$599"
       type="inline"
