@@ -63,7 +63,7 @@ storiesOf("Form", module)
   //number counter
 
   .add("Number Counter", () => (
-    <Counter startvalue="0" type="numberinput" min="1" max="1" step="1" />
+    <Counter startvalue="2" type="numberinput" min="1" max="1" step="1" />
   ))
 
   // text input with button
@@ -72,15 +72,15 @@ storiesOf("Form", module)
       label="Voucher Code"
       buttonlabel="Redeem"
       type="textinputbutton"
-      size="small"
+      boxsize="small"
     />
   ))
-  .add("Input Button (Large)", () => (
+  .add("Input Button (Medium)", () => (
     <InputButton
       label="Voucher Code"
       buttonlabel="Redeem"
       type="textinputbutton"
-      size="large"
+      boxsize="medium"
     />
   ))
 

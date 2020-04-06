@@ -1,8 +1,54 @@
-forms {
-  border-radius: 2px;
-  padding: 5px 25px;
+.form1-small {
+  padding: 5px 25px 5px 5px;
+  display: flex;
+  height: 40px;
+  justify-content: end;
+  position: fixed;
 }
 
-.TextInput {
-  background-color: green;
+input {
+  color: rgb(179, 179, 179);
+  height: 100%;
+  font-size: 15px;
+  width: 220px;
+}
+
+.button1-small {
+  font-family: Lato;
+  font-size: 10px;
+  color: white;
+  background: rgb(0, 157, 255);
+  height: 24px;
+  padding: 5px;
+  padding-top: 8px;
+  margin: 28.68px 0 0 200px;
+  font-size: 15px;
+  width: 80px;
+  position: fixed;
+  text-align: center;
+}
+
+.form1-medium {
+  padding: 5px 25px 5px 5px;
+  display: flex;
+  height: 50px;
+  justify-content: end;
+  width: 200px;
+  position: fixed;
+}
+
+.button1-medium {
+  font-family: Lato;
+  font-size: 10px;
+  color: white;
+  background: rgb(0, 157, 255);
+  height: 24.25px;
+  padding: 5px;
+  padding-top: 12.95px;
+  padding-bottom: 9.5px;
+  margin: 28.7px 0 0 200px;
+  font-size: 15px;
+  width: 80px;
+  position: fixed;
+  text-align: center;
 }

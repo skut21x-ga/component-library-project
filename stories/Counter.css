@@ -1,8 +1,34 @@
-forms {
-  border-radius: 2px;
-  padding: 5px 25px;
+.counter {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0 0 10px;
+  background-color: rgb(244, 244, 244);
+  padding: 0 0 0 10px;
+  width: 50px;
 }
 
-.TextInput {
-  background-color: green;
+.subtractdiv {
+  width: 20px;
+}
+.subtract {
+  margin-top: 9px;
+  font-size: 25px;
+  color: rgb(0, 166, 255);
+}
+.valuediv {
+  width: 20px;
+  margin-top: 6.5px;
+}
+.value {
+  color: black;
+  font-family: Lato;
+  font-size: 15px;
+}
+.adddiv {
+  width: 20px;
+  margin-top: 5.5px;
+}
+.add {
+  font-size: 14px;
+  color: rgb(0, 166, 255);
 }

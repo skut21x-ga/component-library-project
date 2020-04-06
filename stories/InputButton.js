@@ -1,22 +1,30 @@
 import React from "react";
-import "./Forms.css";
+import "./InputButton.css";
 
-const Forms = (props) => {
-  let classList = "";
-  let types = [
-    "textinput",
-    "selectinput",
-    "numberinput",
-    "textinputbutton",
-    "checkbox",
-  ];
-  if (props.large) {
-    classList += ` Forms-large`;
+const InputButton = (props) => {
+  let boxsize = ["small", "medium"];
+  let classList1 = "";
+  let button1 = "";
+  if (boxsize.includes(props.boxsize)) {
+    classList1 += ` form1-${props.boxsize}`;
+    button1 += `button1-${props.boxsize}`;
   }
-  if (types.includes(props.type)) {
-    classList += ` Forms-${props.type}`;
-  }
-  return <div className={classList}>{props.label}</div>;
+
+  return (
+    <form className="form">
+      <div className={classList1}>
+        <label className="text">
+          <br></br>
+          <input type="text" name="name" value={props.label} />
+        </label>
+      </div>
+      <div className={button1}>{props.buttonlabel}</div>
+    </form>
+  );
 };
 
-export default Forms;
+export default InputButton;
+
+// Didn't implement this:
+//  An action prop should accept a callback that is invoked when submit is clicked.
+// The value of the input text should be passed into this callback when it’s invoked.

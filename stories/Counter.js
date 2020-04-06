@@ -1,22 +1,22 @@
 import React from "react";
 import "./Counter.css";
 
-const Forms = (props) => {
-  let classList = "";
-  let types = [
-    "textinput",
-    "selectinput",
-    "numberinput",
-    "textinputbutton",
-    "checkbox",
-  ];
-  if (props.large) {
-    classList += ` Forms-large`;
-  }
-  if (types.includes(props.type)) {
-    classList += ` Forms-${props.type}`;
-  }
-  return <div className={classList}>{props.label}</div>;
+const Counter = (props) => {
+  let value = props.startvalue;
+  return (
+    <div className="counter">
+      <div className="subtractdiv">
+        <a className="subtract">-</a>
+      </div>
+      <div className="valuediv">
+        <a className="value">{value}</a>
+      </div>
+      <div className="adddiv">
+        <a className="add">+</a>
+      </div>
+    </div>
+  );
 };
+export default Counter;
 
-export default Forms;
+// this counter is NOT functional besides passing through the value

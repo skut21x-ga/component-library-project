@@ -27,8 +27,3 @@ const Forms = (props) => {
 };
 
 export default Forms;
-
-/*
-.add("TextInput (Small)", () => (
-  <Forms label="Email" placeholder="Email" type="textinput" boxsize="small" />
-)) */
