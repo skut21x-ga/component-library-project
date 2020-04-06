@@ -8,10 +8,62 @@ import Forms from "./Forms.js";
 ></link>;
 
 storiesOf("Form", module)
-  .add("TextInput", () => <Forms label="Text Input" type="textinput" />)
-  .add("SelectInput", () => <Forms label="Select Input" type="selectinput" />)
-  .add("NumberInput", () => <Forms label="Number Input" type="numberinput" />)
-  .add("TextInputButton", () => (
-    <Forms label="Text Input and Button" type="textinputbutton" />
+  //text input forms
+  .add("TextInput", () => (
+    <Forms label="Email" placeholder="Email" type="textinput" boxsize="small" />
   ))
-  .add("Checkbox", () => <Forms label="Checkbox" type="checkbox" />);
+  .add("TextInput", () => (
+    <Forms
+      label="Email"
+      placeholder="Email"
+      type="textinput"
+      boxsize="medium"
+    />
+  ))
+  .add("TextInput", () => (
+    <Forms label="Email" placeholder="Email" type="textinput" boxsize="large" />
+  ))
+
+  //select input forms
+  .add("SelectInput", () => (
+    <Forms label="Select" type="selectinput" filled="false" outlined="true" />
+  ))
+
+  .add("SelectInput", () => (
+    <Forms label="Select" type="selectinput" filled="true" outlined="false" />
+  ))
+
+  //number input
+
+  .add("NumberInput", () => (
+    <Forms startvalue="0" type="numberinput" min="1" max="1" step="1" />
+  ))
+
+  // text input with button
+  .add("TextInputButton (Small)", () => (
+    <Forms
+      label="Voucher Code"
+      buttonlabel="Redeem"
+      type="textinputbutton"
+      size="small"
+    />
+  ))
+  .add("TextInputButton (Large)", () => (
+    <Forms
+      label="Voucher Code"
+      buttonlabel="Redeem"
+      type="textinputbutton"
+      size="small"
+    />
+  ))
+
+  //checkboxes
+  .add("Black Checkbox", () => (
+    <Forms label="Checkbox" type="checkbox" color="black" />
+  ))
+  .add("Blue Checkbox", () => (
+    <Forms label="Checkbox" type="checkbox" color="blue" />
+  ))
+  .add("Checkbox with Text", () => (
+    <Forms label="Checkbox" type="checkbox" color="black" />
+  ));
