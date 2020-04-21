@@ -30,7 +30,9 @@ This library utilizes HTML, CSS, React, and the Storybook Framework. AdobeXD was
 3. Enter command "npm run storybook"
 4. Open http://localhost:6006/ in your browser (if local).
 
-#
+#### How to access on the internet
+
+1. Visit https://skut21x-ga.github.io/Storybook
 
 #### Built With
 
